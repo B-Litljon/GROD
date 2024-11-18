@@ -1,5 +1,6 @@
-
-use std::collections::VecDeque;
+pub mod momentum {
+    use  std::collections::VecDeque;
+}
 
 pub struct MovingAvg {
     closing_prices: VecDeque<f64>, // VecDeque allows efficient operations for adding and removing elements from both ends
