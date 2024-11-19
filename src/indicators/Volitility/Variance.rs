@@ -1,4 +1,6 @@
-use std::collections::VecDeque;
+pub mod volitility {
+    use std::collections::VecDeque;
+}
 
 pub fn variance(data: &VecDeque<f64>, period: usize, mean: f64) -> f64 {
     data.iter()

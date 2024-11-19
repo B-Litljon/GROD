@@ -1,7 +1,6 @@
-mod momentum;
-mod variance;
-use std::collections::VecDeque;
-
+pub mod volitility {
+    use std::collections::VecDeque;
+}
 pub fn standard_deviation(data: &VecDeque<f64>, period: usize) -> Option<f64> {
     if data.len() < period {
         return None;
