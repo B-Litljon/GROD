@@ -47,3 +47,8 @@ fn main() {
 Use code with caution.
 
 Of course, this is a simplified example. In a real application, you'd probably want to use a loop to keep prompting the user until they provide valid input. But the gist of it is there. Basically, we can define options so that Grod doesn't panic when it gets a strange value. In the case of integers for indicator parameters, we can even set it to a default value if the user doesn't specify what they'd like. In the case of Bollinger bands, the default period is 20, and the +/- deviation is 2. For RSI, the default overbought zone is 70 and above, whereas 30 and below means oversold.
+
+
+## 11-19-24
+
+I was considering switching to python for the sake of getting it done as quickly as possible. especially because I thought that I'd have to code all the indicators manually... turns out I don't have to, rust has all the crates I need to offer roughly the same functionality as I would with python, except in this case I have the awesome error handling capabilities of rust, as well as its 'safe' nature. so now we can focus on the main functionality of the project rather than worrying about how to write the indicators most efficiently. check out the cargo.toml file for what we installed! and change your plans a bit to accomodate your new tools
